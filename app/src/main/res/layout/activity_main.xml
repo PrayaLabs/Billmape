@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/actionbar"/>
+
+    <TextView
+        android:id="@+id/tagline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tagline1"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginTop="110dp"/>
+    <TextView
+        android:id="@+id/tagline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tagline2"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginTop="140dp"/>
+
+    <ImageView
+        android:id="@id/login_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="150dp"
+        android:src="@drawable/login"
+        android:contentDescription="@string/login_desc" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="320dp"
+        android:layout_marginStart="30dp"/>
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@drawable/outbox"
+        android:hint="@string/enter_email"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:letterSpacing="0.05"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="345dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="30dp"/>
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="505dp"
+        android:layout_marginStart="270dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/boxmodel"
+        android:layout_marginTop="550dp"
+        />
+    <TextView
+        android:id="@+id/click_register"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/register_here"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:layout_marginTop="610dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="420dp"
+        app:passwordToggleDrawable="@drawable/icon_selector"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:background="@drawable/outbox"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/pass"
+            android:drawablePadding="8dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="400dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/actionbar"/>
+     
+    <TextView
+        android:id="@+id/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/input_fields"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:fontFamily="serif"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="50dp"/>
+        <EditText
+            android:id="@+id/enter_date"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/enter_date"
+            android:letterSpacing="0.05"
+            android:inputType="date"
+            android:layout_marginStart="50dp"
+            android:autofillHints="Enter Date" />
+
+        <TextView
+            android:id="@+id/bill"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bill"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"/>
+
+        <EditText
+            android:id="@+id/enter_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/enter_bill"
+            android:layout_marginStart="50dp"
+            android:autofillHints="@string/enter_bill"
+            />
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/shop"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"/>
+
+        <EditText
+            android:id="@+id/enter_shop"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/enter_shop"
+            android:layout_marginStart="50dp"
+            android:autofillHints="@string/enter_shop"/>
+        <TextView
+            android:id="@+id/credit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"/>
+
+        <EditText
+            android:id="@+id/enter_credit"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/enter_amount"
+            android:layout_marginStart="50dp"
+            android:autofillHints="@string/enter_amount"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="@string/save"
+            android:textColor="#fff"
+            android:layout_marginStart="95dp"
+            android:background="@drawable/boxmodel"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/back_entries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginStart="309dp"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

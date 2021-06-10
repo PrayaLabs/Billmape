@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/back"
+        android:title="Back"
+        android:icon="@drawable/ic_arrow_back"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/my_account"
+        android:title="My account"
+        android:icon="@drawable/ic_my_account"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        app:showAsAction="never"/>
+
+</menu>
